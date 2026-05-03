@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Kamal Kumar Paul Research Group</title>
+    <!-- This links to your design file! -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html" class="logo">Paul Research Group</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#pi">Principal Investigator</a></li>
+            <li><a href="index.html#team">Research Group</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="oppurtunities.html">Oppurtunities</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Main Container: Image Slider -->
+    <section class="slider-container" id="home">
+        
+        <!-- Slide 1 -->
+        <div class="slide fade">
+            <!-- Upload an image to GitHub named lab-photo-1.jpg -->
+            <img src="media/lab-photo-1.jpg" alt="Lab Equipment">
+            <div class="slide-text">
+                <h1>Dr. Kamal Kumar Paul Research Group</h1>
+                <p>Institute of Low-Dimensional Quantum Materials | Hubei University of Technology</p>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide fade">
+            <!-- Upload an image to GitHub named lab-photo-2.jpg -->
+            <img src="media/lab-photo-2.jpg" alt="Clean Room">
+            <div class="slide-text">
+                <h1>Advanced Synthesis</h1>
+                <p>Exploring 2D Transition Metal Dichalcogenides</p>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide fade">
+            <!-- Upload an image to GitHub named lab-photo-3.jpg -->
+            <img src="media/lab-photo-3.jpg" alt="Research Meeting">
+            <div class="slide-text">
+                <h1>Next-Generation Photovoltaics</h1>
+                <p>Pushing the limits of Hot Carrier Solar Cells</p>
+            </div>
+        </div>
+
+        <!-- The "Next" and "Previous" Arrows -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+    </section>
+
+    <!-- Main Content (PI, Team, and Research Areas) -->
+    <div class="container">
+        
+        <!-- Image and Information of PI -->
+        <h2 class="section-header" id="pi">Principal Investigator</h2>
+        <section class="pi-section">
+            <!-- Upload Dr. Paul's image to GitHub named dr-paul.jpg -->
+            <img src="dr-paul.jpg" alt="Dr. Kamal Kumar Paul" class="pi-image">
+            <div class="pi-info">
+                <h2>Dr. Kamal Kumar Paul</h2>
+                <h3>Pricipal Investigator</h3>
+                <p>Our group focuses on the experimental synthesis and theoretical modeling of advanced nanoscale materials. We are dedicated to bridging the gap between fundamental quantum physics and next-generation optoelectronic applications.</p>
+                <p>Email: <a href="mailto:contact@hbut.edu.cn">contact@hbut.edu.cn</a></p>
+            </div>
+        </section>
+
+        <!-- Research Group / Team Section -->
+        <h2 class="section-header" id="team">Research Group</h2>
+        <div class="grid-container">
+            
+            <div class="card team-member">
+                <h4>Vivek Chandran</h4>
+                <p><strong>PhD Scholar</strong></p>
+                <p><em>Focus: 2D Semiconductors & Data Analysis</em></p>
+            </div>
+
+            <div class="card team-member">
+                <h4>Scholar Name</h4>
+                <p><strong>Postdoctoral Fellow</strong></p>
+                <p><em>Focus: Energy-selective Contacts</em></p>
+            </div>
+
+            <div class="card team-member">
+                <h4>Scholar Name</h4>
+                <p><strong>Master's Student</strong></p>
+                <p><em>Focus: Interfacial Solar-driven Systems</em></p>
+            </div>
+
+        </div>
+
+        <!-- Research Topics -->
+        <h2 class="section-header" id="areas">Research Areas</h2>
+        <div class="grid-container">
+            
+            <div class="card">
+                <h3>Two-Dimensional TMDs</h3>
+                <p>Exploring the unique electronic and optical properties of transition metal dichalcogenides (e.g., MoS2) and their van der Waals heterostructures for ultra-thin device integration.</p>
+            </div>
+
+            <div class="card">
+                <h3>Hot Carrier Solar Cells</h3>
+                <p>Investigating energy-selective contacts and advanced architectures to capture high-energy charge carriers, pushing photovoltaic efficiency beyond the Shockley-Queisser limit.</p>
+            </div>
+
+            <div class="card">
+                <h3>Solar-Driven Evaporation</h3>
+                <p>Developing bio-inspired, polymer-modified interfacial systems for highly efficient, sustainable water purification and desalination.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Dr. Kamal Kumar Paul Research Group. All rights reserved.</p>
+    </footer>
+
+    <!-- Slider Javascript (The Brains of the Image Slider) -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+        
+        // Auto-change image every 5 seconds
+        setInterval(function() {
+            changeSlide(1);
+        }, 5000); 
+    </script>
+
+</body>
+</html>
