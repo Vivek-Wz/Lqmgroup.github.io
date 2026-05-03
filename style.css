@@ -209,3 +209,45 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+/* --- Mobile Responsiveness (For Phones & Tablets) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Stack the Navigation Menu */
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap; /* Allows links to wrap to a second line if the screen is very small */
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* 2. Shrink the Slider text and height */
+    .slider-container {
+        height: 50vh; /* Makes the banner a bit shorter on phones */
+    }
+    .slide-text h1 {
+        font-size: 1.8rem; /* Shrinks the main title */
+    }
+    .slide-text p {
+        font-size: 1rem;
+    }
+    .prev, .next {
+        padding: 10px;
+        font-size: 20px; /* Makes the arrows smaller */
+    }
+
+    /* 3. Stack the PI Section */
+    .pi-section {
+        flex-direction: column; /* Puts Dr. Paul's photo ABOVE his text instead of next to it */
+        text-align: center;
+        gap: 20px;
+    }
+    
+    /* Center the container text */
+    .section-header {
+        text-align: center;
+    }
+}
