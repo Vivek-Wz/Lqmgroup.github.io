@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities - Paul Research Group</title>
+    <!-- Links to your shared design file -->
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* Specific styling for equipment images */
+        .equip-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid var(--primary-blue);
+            border-radius: 5px 5px 0 0;
+            margin: -20px -20px 15px -20px; /* Pulls the image to the very edge of the card */
+            width: calc(100% + 40px);
+        }
+        .equip-card {
+            overflow: hidden; /* Keeps the stretched image inside the rounded corners */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html" class="logo">Paul Research Group</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pi.html">Principal Investigator</a></li>
+            <li><a href="team.html">Research Group</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 40px 20px;">
+        <h1>Research Facilities</h1>
+        <p>State-of-the-art equipment for the synthesis, characterization, and device testing of low-dimensional quantum materials.</p>
+    </section>
+
+    <div class="container">
+        
+        <!-- Category 1 -->
+        <h2 class="section-header">Synthesis & Fabrication</h2>
+        <div class="grid-container">
+            
+            <div class="card equip-card">
+                <!-- Replace with an actual photo of your CVD setup -->
+                <img src="placeholder-cvd.jpg" alt="CVD Furnace" class="equip-img">
+                <h3 style="margin-top: 0;">Chemical Vapor Deposition (CVD)</h3>
+                <p>Used for the high-quality, large-area growth of 2D transition metal dichalcogenides (TMDs) and van der Waals heterostructures.</p>
+            </div>
+
+            <div class="card equip-card">
+                <img src="placeholder-glovebox.jpg" alt="Inert Gas Glovebox" class="equip-img">
+                <h3 style="margin-top: 0;">Inert Gas Glovebox</h3>
+                <p>Ensures an oxygen and moisture-free environment for handling sensitive nanoscale materials and assembling solar cell interfaces.</p>
+            </div>
+
+        </div>
+
+        <!-- Category 2 -->
+        <h2 class="section-header" style="margin-top: 60px;">Material Characterization</h2>
+        <div class="grid-container">
+            
+            <div class="card equip-card">
+                <img src="placeholder-raman.jpg" alt="Raman Spectrometer" class="equip-img">
+                <h3 style="margin-top: 0;">Raman & PL Spectrometer</h3>
+                <p>Crucial for determining the layer number, strain, and defect density of our synthesized 2D semiconductors.</p>
+            </div>
+
+            <div class="card equip-card">
+                <img src="placeholder-afm.jpg" alt="Atomic Force Microscope" class="equip-img">
+                <h3 style="margin-top: 0;">Atomic Force Microscope (AFM)</h3>
+                <p>Provides sub-nanometer topographical mapping to analyze the surface roughness and thickness of quantum material flakes.</p>
+            </div>
+
+        </div>
+
+        <!-- Category 3 -->
+        <h2 class="section-header" style="margin-top: 60px;">Optoelectronic Testing</h2>
+        <div class="grid-container">
+            
+            <div class="card equip-card">
+                <img src="placeholder-solar.jpg" alt="Solar Simulator" class="equip-img">
+                <h3 style="margin-top: 0;">AAA Solar Simulator</h3>
+                <p>Standardized illumination for accurately measuring the power conversion efficiency (PCE) of our hot carrier and interfacial solar cells.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Dr. Kamal Kumar Paul Research Group. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
