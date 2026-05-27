@@ -219,8 +219,8 @@ footer {
 
 .news-track {
     display: flex;
-    gap: 20px;
     width: max-content;
+    animation: scrollLeft 25s linear infinite;
     /* 25s controls the speed. Lower = faster, Higher = slower */
     animation: scrollLeft 25s linear infinite; 
 }
@@ -229,16 +229,17 @@ footer {
 .news-track:hover {
     animation-play-state: paused; 
 }
-
 .news-card {
     width: 300px;
+    margin-right: 20px; /* This replaces the gap */
     background: white;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     overflow: hidden;
-    flex-shrink: 0; /* Prevents the cards from squishing together */
+    flex-shrink: 0; 
 }
+
 
 .news-card img {
     width: 100%;
