@@ -210,12 +210,15 @@ footer {
     margin-top: 40px;
 }
 /* --- News & Updates Auto-Scroller --- */
-.news-scroller {
+
+    .news-scroller {
     width: 100%;
-    overflow: hidden; /* Hides the cards that are off-screen */
+    max-width: 1000px; /* This creates the "box" */
+    margin: 20px auto 0 auto; /* The 'auto' perfectly centers the box on your screen */
+    overflow: hidden; /* This acts as the walls, hiding cards outside the 1000px box */
     padding: 10px 0;
-    margin-top: 20px;
 }
+
 
 .news-track {
     display: flex;
