@@ -5,20 +5,20 @@
     --text-dark: #333;
 }
 
-    body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Keeps your font */
+   body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333;
     
-    /* --- The Soft Background Magic --- */
-    background-color: #f8fafc; /* A very soft, cool off-white/grey */
-    background-image: radial-gradient(#cbd5e1 1px, transparent 1px); /* The dots */
-    background-size: 24px 24px; /* Spacing between the dots */
+    /* The Ambient Glow */
+    background-color: #fdfbf7; 
+    background-image: 
+        radial-gradient(circle at 0% 20%, rgba(254, 243, 199, 0.4) 0%, transparent 40%),
+        radial-gradient(circle at 100% 80%, rgba(224, 242, 254, 0.4) 0%, transparent 40%);
+    background-attachment: fixed; /* Keeps the glow in place when you scroll */
 }
-
-
 /* --- Navigation Menu --- */
 nav {
     background-color: var(--primary-blue);
